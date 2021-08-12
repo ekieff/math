@@ -1,4 +1,4 @@
-console.log('Hello World')
+
 function problem(){
     var num = 12
     var rounds = 0
@@ -17,4 +17,4 @@ function problem(){
         }
     } 
 }
-problem()
+export default problem;
