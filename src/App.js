@@ -2,6 +2,7 @@
 import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -21,9 +22,9 @@ function App() {
         <form>
         <label>
           Your Number
-          <input type="text" name="num" />
+          <input type="number" name="num" />
         </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" onClick={()=> console.log('clicked')}/>
       </form>
         
       </header>
