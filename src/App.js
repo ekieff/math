@@ -18,6 +18,13 @@ function App() {
         <p>
           Try it yourself
         </p>
+        <form>
+        <label>
+          Your Number
+          <input type="text" name="num" />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
         
       </header>
     </div>
