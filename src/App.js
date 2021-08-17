@@ -1,8 +1,9 @@
 
 import './App.css';
+import Problem from './problem';
 
 function App() {
-  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -19,14 +20,7 @@ function App() {
         <p>
           Try it yourself
         </p>
-        <form>
-        <label>
-          Your Number
-          <input type="number" name="num" />
-        </label>
-        <input type="submit" value="Submit" onClick={()=> console.log('clicked')}/>
-      </form>
-        
+        <Problem/>
       </header>
     </div>
   );
