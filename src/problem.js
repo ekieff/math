@@ -3,6 +3,7 @@ import React, {useState} from "react";
 
 export default function Problem() {
 var [number, setNum] = useState()
+var [result, setResult] = useState()
   function submitNumber(e) {
       console.log(number)
       e.preventDefault();
@@ -19,6 +20,7 @@ var [number, setNum] = useState()
                 }
             } 
             console.log(num)
+            setResult('The number is now 1 and it took ' +rounds +' rounds to get there.')
         console.log('The number is now 1 and it took ' +rounds +' rounds to get there.')
   }
   function tryIt(e){
@@ -37,6 +39,7 @@ var [number, setNum] = useState()
             </label>
             <button type="submit" value="Submit" name="submit" onClick={(e)=>{submitNumber(e)}}>Submit</button>
         </form>
+        <h1>{result}</h1>
     </div>
     
   );
